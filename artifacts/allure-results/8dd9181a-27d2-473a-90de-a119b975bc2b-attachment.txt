@@ -1,0 +1,26 @@
+[32mINFO    [0m pages.LoginPage:LoginPage.py:17 Login with user:standard_user
+[32mINFO    [0m pages.HomePage:HomePage.py:20 Assert Home page loaded (inventory)
+[32mINFO    [0m pages.HomePage:HomePage.py:26 Open product from list: Sauce Labs Backpack
+[32mINFO    [0m pages.ProductPage:ProductPage.py:18 Assert Product page loaded: Sauce Labs Backpack
+[32mINFO    [0m pages.ProductPage:ProductPage.py:24 Add item to cart
+[32mINFO    [0m pages.ProductPage:ProductPage.py:29 Back to Home (Products list)
+[32mINFO    [0m pages.HomePage:HomePage.py:20 Assert Home page loaded (inventory)
+[32mINFO    [0m pages.HomePage:HomePage.py:26 Open product from list: Sauce Labs Bike Light
+[32mINFO    [0m pages.ProductPage:ProductPage.py:18 Assert Product page loaded: Sauce Labs Bike Light
+[32mINFO    [0m pages.ProductPage:ProductPage.py:24 Add item to cart
+[32mINFO    [0m pages.ProductPage:ProductPage.py:29 Back to Home (Products list)
+[32mINFO    [0m pages.HomePage:HomePage.py:31 Open Cart from icon
+[32mINFO    [0m pages.CartPage:CartPage.py:17 Check out page is loaded
+[32mINFO    [0m pages.CartPage:CartPage.py:28 Assert item count is equal to expected count
+[32mINFO    [0m pages.CartPage:CartPage.py:23 Assert item is present in cart
+[32mINFO    [0m pages.CartPage:CartPage.py:23 Assert item is present in cart
+[32mINFO    [0m pages.CartPage:CartPage.py:33 Click checkout button
+[32mINFO    [0m pages.ShippingPage:ShippingPage.py:19 Assert Shipping page loaded
+[32mINFO    [0m pages.ShippingPage:ShippingPage.py:25 Entering Shipping Details:Moataz Mustafa
+[32mINFO    [0m pages.ShippingPage:ShippingPage.py:32 Continue to Checkout
+[32mINFO    [0m pages.CheckoutPage:CheckoutPage.py:21 Checkout page is loaded
+[32mINFO    [0m pages.CheckoutPage:CheckoutPage.py:28 Checking totals on Checkout page
+[32mINFO    [0m pages.CheckoutPage:CheckoutPage.py:33 finish checkout
+[32mINFO    [0m pages.SuccessPage:SuccessPage.py:16 Assert login page is loaded
+[32mINFO    [0m pages.SuccessPage:SuccessPage.py:22 Assert success message is visible
+[32mINFO    [0m pages.HomePage:HomePage.py:36 Logout from menu

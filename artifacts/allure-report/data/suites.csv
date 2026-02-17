@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1797","test_e2e_two_items_checkout","tests","2026-02-17","passed","2026-02-17","","test_e2e_checkout","",""
