@@ -51,7 +51,7 @@ A **clean, scalable UI automation framework** built with:
 ## 🗂️ Project Structure
 
 ```text
-odoo-qa/
+saucedemo/
 ├─ pages/                 # POM: locators + actions + assertions (+ Allure steps)
 ├─ tests/                 # Test cases (E2E / smoke / regression)
 ├─ utils/                 # Helpers (logger, shared utilities)

@@ -1,4 +1,4 @@
-# Gemini Interaction Mandates (odoo-qa)
+# Gemini Interaction Mandates (saucedemo)
 
 These instructions take absolute precedence over general workflows and tool defaults for all interactions within this workspace.
 
