@@ -13,6 +13,7 @@ class ShippingPage:
         self.last_name = page.get_by_placeholder("Last Name")
         self.zip_code = page.get_by_placeholder("Zip/Postal Code")
         self.continue_btn = page.locator("[data-test='continue']")
+        self.error = page.locator("[data-test='error']")
 
     def assert_loaded(self):
         with allure.step("Assert Shipping page loaded"):
@@ -31,3 +32,9 @@ class ShippingPage:
         with allure.step("Continue to Checkout"):
                 log.info("Continue to Checkout")
                 self.continue_btn.click()
+
+    @allure.step("Assert error message: {expected_text}")
+    def assert_error_message(self, expected_text: str):
+        with allure.step(f"Assert error message is: {expected_text}"):
+            log.info(f"Assert error message is: {expected_text}")
+            expect(self.error).to_contain_text(expected_text)

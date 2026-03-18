@@ -32,3 +32,9 @@ class LoginPage:
         with allure.step("Assert login error is visible"):
             log.info("Assert login error is visible")
             expect(self.error).to_be_visible()
+
+    @allure.step("Assert login error message contains: {text}")
+    def assert_error_message_contains(self, text: str):
+        with allure.step(f"Assert login error message contains: {text}"):
+            log.info(f"Assert login error message contains: {text}")
+            expect(self.error).to_contain_text(text)

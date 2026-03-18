@@ -36,3 +36,17 @@ def test_invalid_login(page):
 
     # 2) Assert error message is visible
     login_page.assert_error_visible()
+
+@allure.feature("Authentication")
+@allure.story("Locked Out User")
+def test_locked_out_user(page):
+    """
+    Test case to verify error message for locked out user.
+    """
+    login_page = LoginPage(page)
+
+    # 1) Login with locked out user
+    login_page.login("locked_out_user", "secret_sauce")
+
+    # 2) Assert error message contains "locked out"
+    login_page.assert_error_message_contains("Sorry, this user has been locked out.")

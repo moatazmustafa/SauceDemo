@@ -28,6 +28,12 @@ class CartPage:
           log.info("Assert item count is equal to expected count")
           expect(self.cart_items).to_have_count(expected_count)
 
+    def remove_item(self, product_name: str):
+        with allure.step(f"Remove item from cart: {product_name}"):
+            log.info(f"Remove item from cart: {product_name}")
+            item = self.page.locator("[data-test='inventory-item']", has_text=product_name)
+            item.locator("button[data-test^='remove']").click()
+
     def checkout(self):
         with allure.step("Click checkout button"):
           log.info("Click checkout button")
